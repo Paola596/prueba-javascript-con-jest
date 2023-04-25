@@ -15,11 +15,18 @@ let oneEuroIs = {
 //     return (dollar/(1.2*127.9)).toFixed(2);
 // }
 
-function fromEuroToDollar(euro) {
-    return euro* 1.20;
+const fromEuroToDollar = function(euro) {
+    let valueDollar = euro*1.2;
+    return valueDollar
 }
 
-// function fromYenToPound(yen) {
-//     return (yen * 0.8/127.9).toFixed(2) ;
-// }
 
+const fromDollarToYen = (dollar) =>{
+    let valueEuro = dollar/1.2
+    return Number((valueEuro*127.9).toFixed(2))
+}
+
+const fromYenToPound = (valueYen) =>{
+    let valueEuro = valueYen/127.9
+    return Number((valueEuro*0.8).toFixed(2));
+}
