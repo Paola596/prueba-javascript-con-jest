@@ -9,16 +9,16 @@ function fromEuroToDollar(euro){
 };
 module.exports = fromEuroToDollar;
 
-function fromDollarToYen (dollar) {
-    let valueEuro = dollar / 1.2;
-    let yen = ((valueEuro * 127.9).toFixed(2));
-    return yen;
-};
-module.exports = fromDollarToYen;
+// function fromDollarToYen (dollar) {
+//     let valueEuro = dollar / 1.2;
+//     let yen = ((valueEuro * 127.9).toFixed(2));
+//     return yen;
+// };
+// module.exports = fromDollarToYen;
 
-function fromYenToPound(yens) {
-    let euros = yens / 127.9;
-    let pound = ((euros*0.8).toFixed(2));
-    return pound;
-};
-module.exports = fromYenToPound;
+// function fromYenToPound(yens) {
+//     let euros = yens / 127.9;
+//     let pound = ((euros*0.8).toFixed(2));
+//     return pound;
+// };
+// module.exports = fromYenToPound;
